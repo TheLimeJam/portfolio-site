@@ -4,11 +4,10 @@ import Layout from '../components/layout'
 const ProjectPage = () => {
     return (
         <Layout pageTitle="My Projects">
-            <h1>QUT IT Capstone Project</h1>
-            <h1>Game Jam</h1>
-            <h1></h1>
+            <a href="https://itch.io/profile/the-lime-jam">itch.io</a><br></br>
+            <a href="https://github.com/TheLimeJam">Github</a>
             <p>
-                Check out all my projects here except I havent sent them so there are none here ahahahah
+                Check out my itch.io and Github to see my projects.
             </p>
         </Layout>
     )

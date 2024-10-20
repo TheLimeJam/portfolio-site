@@ -5,9 +5,9 @@ import { emailForm, nameBox, emailBox, messageBox, submitButton} from '../compon
 const ContactPage = () => {
     return (
         <Layout pageTitle="Contact">
+            <a href="https://www.linkedin.com/in/james-graieg-176724231/">LinkedIn</a><br></br>
             <p>
-                If you're interested in getting in contact with me feel free to an email to me through this form. 
-                It was probably the hardest part of this website ;-;
+                If you're interested in getting in contact with me feel free to an email to me through this form or check out my linkedin. 
             </p>
             <div className={emailForm}>
                 <form action="https://getform.io/f/alljoxva" method="POST">
