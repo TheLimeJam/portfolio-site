@@ -13,7 +13,7 @@ const ProjectPage = () => {
             <a href="https://itch.io/profile/the-lime-jam"> my itch.io</a><br></br>
             <h1>QUT Captsone Project for Energy Queensland</h1>
             <h2>Roles: Project manager, front end and back end web developer</h2>
-            <p> or my QUT capstone project I joined a team of 4 IT students to develop and deliver a website designed to store and organise 3D assets for Energy Queensland. We worked under an adapted SCRUM framework, designing and developing a fully functioning Next.js website and API to call our proof of concept Azure database. Upon conclusion of our project our work was handed straight to developers at Energy Queensland for integration into their network and database so documentation especially for our API was key.</p>
+            <p> for my QUT capstone project I joined a team of 4 IT students to develop and deliver a website designed to store and organise 3D assets for Energy Queensland. We worked under an adapted SCRUM framework, designing and developing a fully functioning Next.js website and API to call our proof of concept Azure database. Upon conclusion of our project our work was handed straight to developers at Energy Queensland for integration into their network and database so documentation especially for our API was key.</p>
 
             <h1>24hr Game Jam</h1>
             <h2>Roles: Games programmer</h2>
@@ -22,7 +22,7 @@ const ProjectPage = () => {
             <p>
                 I worked as a programmer in a group of 3 in a 24hr game jam.
                 Together we made a 2d platformer in unity with the theme of 'time'
-                In the end we did run our of 'time' and the game never reached completion. 
+                In the end we did run out of 'time' and the game never reached completion. 
                 It taught us a lot of game dev fundimentals and about working under pressure.
             </p>
 
