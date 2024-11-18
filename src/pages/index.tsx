@@ -5,13 +5,13 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
       <p>
-        Hi I'm James, welcome to my portfolio site. 
+        Hi, I'm James, welcome to my portfolio site. 
       </p>
       <p>
-        This is the first iteration of my site which I'm developing to show off my portfolio as well as be a portfolio item itself. 
-        I've got more planned for this site when the relentless flow of university assignments finally yields so feel free to check back later to see those changes. 
-        For now feel free to find out more on my 'about me' and 'project pages'.
-        If you want to get in contact with me see the 'contact' page to find out how 
+        To hear more about me or my work feel free to check out the 'About Me' and 'My Projects' pages respectively.
+        If you want to get in contact with me see the 'contact' page to find out how.
+        The site is still in its early stages however I want it to be not just a list of my projects but a portfolio item itself.
+        All the code is publicaly available on my github so feel free to check it out or come back to see the changes I make.
       </p>
       <p>
         Thanks again for checking everything out.
