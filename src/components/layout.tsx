@@ -8,13 +8,15 @@ import {
   navLinkText,
   headingBar,
   hbButton,
-  optionsBar,
-  opButton,
   addressBar,
   abButton,
   abBox,
   abName,
-  abSearchBar
+  abSearchBar,
+  footerBar,
+  fbText,
+  fbLoad,
+  fbBlock
 } from './layout.module.css'
 
 type LayoutProps = {
@@ -27,22 +29,15 @@ const Layout = ({ pageTitle, children }: LayoutProps) => {
     <div className={container}>
       <ul className={headingBar}> 
         {pageTitle}
-        <li className={hbButton}>X</li>
-        <li className={hbButton}>|_|</li>
-        <li className={hbButton}>_</li>
-      </ul>
-      <ul className={optionsBar}> 
-        <li className={opButton}>File</li>
-        <li className={opButton}>Edit</li>
-        <li className={opButton}>View</li>
-        <li className={opButton}>Favourites</li>
-        <li className={opButton}>Help</li>
+        <li className={hbButton}>&#128473;</li>
+        <li className={hbButton}>&#128470;</li>
+        <li className={hbButton}>&#128469;</li>
       </ul>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>
-              Home
+            Home
             </Link>
           </li>
           <li className={navLinkItem}>
@@ -66,13 +61,21 @@ const Layout = ({ pageTitle, children }: LayoutProps) => {
         <li className={abName}>Address:</li>
         <ul className={abSearchBar}>
           <li className={abBox}>https//www.jamesgraieg.com/{pageTitle}</li>
-          <li className={abButton}>V</li>
+          <li className={abButton}>&#11206;</li>
         </ul>
       </ul>
       <main>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
+      <footer>
+        <ul className={footerBar}> 
+          <li className={fbText}></li>
+          <div className={fbLoad}>
+            <div className={fbBlock}></div>
+          </div>
+        </ul>
+      </footer>
     </div>
   )
 }

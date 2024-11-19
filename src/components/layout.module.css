@@ -1,72 +1,99 @@
-
+/*Variables*/
+:root {
+    --accent: rgb(0, 255, 171);
+    --window: lightgrey;
+    --window-shadow: darkgrey;
+    --page: white;
+    --light-text: white;
+    --dark-text: black;
+    --button: lightgrey;
+    --button-press: grey;
+    --button-press-border: black;
+}
+/*Sizing*/
+@media only screen and (max-width: 600px){
+    .container{ width: 100%;}
+}
+@media only screen and (min-width: 600px){
+    .container{ width: 87.5%;}
+}
+@media only screen and (min-width: 768px){
+    .container{ width: 75%;}
+}
+@media only screen and (min-width: 992px){
+    .container{ width: 62.5%;}
+}
+@media only screen and (min-width: 1200px){
+    .container{ width: 50%;}
+}
+/*HTML Elements*/
 body{
     background-color: lightcyan;
 }
 main {
-    background-color: white;
+    background-color: var(--page);
     border-style: inset;
     padding: 5%;
     margin: 0;
+    scrollbar-color: var(--window);
+}
+footer {
+    background-color: var(--window);
+    border-style: groove;
+    border-color: var(--window-shadow);
 }
 
-
+/*Classes*/
+/*REACT Layout Component Styling*/
 .container {
     margin: auto;
-    width: 50%;
     font-family: sans-serif;
-    background-color: lightgray;
+    background-color: var(--window);
     padding: 3px;
 }
-
+/*
+Page Heading bar.
+Displays name of current page and includes 'Dummy' buttons
+Styled to look like the top bar of old Windows 95 program windows
+*/
 .heading-bar {
-    color: white;
-    background-color: rgb(0, 255, 171);
+    color: var(--page);
+    background-color: var(--accent);
     list-style: none;
-    padding: 3px;
+    padding: 2px;
     margin: 0;
     overflow: auto;
     cursor: default;
 }
 .hb-button {
-    color: black;
-    background-color: lightgray;
+    color: var(--dark-text);
+    background-color: var(--button);
     border-style: outset;
     display: inline;
     float: right;
     text-align: center;
+    height: 17px;
+    padding: 1px;
+    margin: 1px;
+    line-height: 85%;
 }
 .hb-button:active{
-    background-color: grey;
-    border-color: black;
+    background-color: var(--button-press);
+    border-color: var(--button-press-border);
     border-style: inset;
 }
-  
-.options-bar{
-    color: black;
-    background-color: lightgray;
-    border-style: solid;
-    border-width: thin;
-    border-color: darkgrey;
-    list-style: none;
-    padding: 1%;
-    margin: 0;
-    cursor: default;
-}
-.op-button {
-    display: inline;
-    padding: 1%;
-}   
-.op-button:active{
-    background-color: grey;
-    border-color: black;
-}
 
+/*
+Address Bar
+Includes a mock of the current web page url
+designed to look like the URL bar of old browser programs
+*/
 .address-bar{
     color: black;
-    background-color: lightgray;
+    background-color: var(--window);
     border-style: groove;
     border-width: thin;
-    border-color: darkgrey;
+    border-color: var(--window-shadow);
     list-style: none;
     padding: 3px;
     margin: 0;
@@ -76,10 +103,11 @@ main {
 .ab-name{
     display: inline;
     float: left;
+    margin: 1px;
 }
 .ab-search-bar{
-    color: black;
-    background-color: white;
+    color: var(--dark-text);
+    background-color: var(--light-text);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -88,16 +116,16 @@ main {
     cursor: text;
 }
 .ab-button {
-    color: black;
-    background-color: lightgray;
+    background-color: var(--window);
     border-style: outset;
     float: right;
     text-align: center;
     cursor: default;
+    line-height: 87%;
 }
 .ab-button:active{
-    background-color: grey;
-    border-color: black;
+    background-color: var(--button-press);
+    border-color: var(--button-press-border);
     border-style: inset;
 }
 .ab-box{
@@ -105,6 +133,81 @@ main {
     float: left;
 }
 
+/*
+Navigation Bar
+Includes buttons to navigate to all site pages
+Styled to look like the functions bar (file,edit,help,etc) on old programs
+*/
+.nav-links{
+    color: var(--dark-text);
+    background-color: var(--window);
+    border-style: solid;
+    border-width: thin;
+    border-color: var(--window-shadow);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    overflow: auto;
+}
+.nav-link-item {
+    display: inline;
+    padding: 8px;
+    float: left;
+
+}   
+.nav-link-item:active{
+    background-color: var(--button-press);
+    border-color: var(--button-press-border);
+}
+.nav-link-text {
+    color: var(--dark-text);
+    text-decoration: none;
+    text-align: center;
+    width:100%;
+    height: 100%;
+    border: 0%;
+    margin: 0%;
+}
+
+/*
+Footer Bar
+List of contents stored in the footer
+Designed to look like the bar at the bootom of old browsers with web page loading text and a loading bar
+*/
+.footer-bar {
+    list-style: none;
+    overflow: auto; 
+    padding: 0;
+    margin: 0;
+}
+.fb-load{
+    border-style: groove;
+    float: right;
+    list-style: none;
+    margin: 4px;
+    padding: 0;
+    width: 100px;
+    overflow: auto;
+}/*
+.fb-block{
+    height: 9px;
+    width: 5px;
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    box-shadow: 7px 0px var(--accent), 14px 0px var(--accent), 21px 0px var(--accent), 28px 0px var(--accent), 35px 0px var(--accent);
+}
+@keyframes fb-block{
+    from {background-color: transparent; box-shadow: transparent;}
+    to {background-color: var(--accent); box-shadow: var(--accent);}
+}
+*/ 
+
+
+
+/*
+Old nav link styling,
+to be removed when new styling is finalised
 
 .nav-links {
     background-color: transparent;
@@ -117,7 +220,6 @@ main {
     position: sticky;
     flex-direction: row;
     cursor: default;
-
 }
 .nav-link-item {
     justify-content: center;
@@ -144,6 +246,13 @@ main {
     border: 0%;
     margin: 0%;
 }
+*/
+
+/*
+Styling for more specific classess and elements
+To be better organised in future
+Consider moving some to more specific style sheets
+*/
 .heading {
     color: black;
 }
@@ -214,3 +323,4 @@ button[type=submit]:hover {
         clear: both;
     }
 }
+
